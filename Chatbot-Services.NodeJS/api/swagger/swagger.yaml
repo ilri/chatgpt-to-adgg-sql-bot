@@ -1,0 +1,83 @@
+swagger: '2.0'
+info:
+  version: 0.0.1
+  title: ADGG Chatbot
+
+host: localhost:3002
+# host: 'dev-url'
+# host: 'pre-production-url'
+# host: 'production-url'
+basePath: /api
+schemes:
+  - http
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /executeQuery:
+    x-swagger-router-controller: userChat
+    post:
+      tags:
+        - 'UserChat'
+      description: Collecting Data from database based on user chat
+      operationId: getDataByUserReq
+      # security:
+      #   - Bearer: []
+      parameters:
+        - in: body
+          name: body
+          description: User chat Data
+          required: true
+          schema:
+            $ref: '#/definitions/UserChatDataParams'
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/OpenAIResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+definitions:
+  OpenAIResponse:
+    required:
+      - data
+      - error
+      - isSuccess
+    properties:
+      data:
+        type: object
+      error:
+        type: object
+      isSuccess:
+        type: boolean
+  ErrorResponse:
+    required:
+      - data
+      - error
+      - isSuccess
+    properties:
+      data:
+        type: object
+      error:
+        type: object
+      isSuccess:
+        type: boolean
+  UserChatDataParams:
+    properties:
+      chats:
+        type: array
+        items:
+          type: object
+          properties:
+            role:
+              type: string
+            content:
+              type: string
+      # role:
+      #   type: string
+      # content:
+      #   type: string

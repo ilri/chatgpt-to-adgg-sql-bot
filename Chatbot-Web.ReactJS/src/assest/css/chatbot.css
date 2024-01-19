@@ -1,0 +1,203 @@
+.chatbot-home {
+  background-color: #242424;
+  min-height: 100vh;
+  color: white;
+}
+
+.chatbot-header {
+  height: 12vh;
+  padding: 0px, 598px, 1px, 66px;
+  border: 0px, 0px, 1px, 0px;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+  display: flex;
+}
+.logo-card {
+  width: 50%;
+}
+.logo-styles {
+  height: 100%;
+}
+.chatbot-card {
+  display: flex;
+  height: 86vh;
+}
+
+.user-chat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+  top: 84px;
+  padding: 24px;
+  border-right: 1px solid #373737;
+}
+
+.user-msg-card {
+  display: flex;
+  justify-content: flex-end;
+}
+.user-msg {
+  background: #2f4f4f;
+  text-align: left;
+  margin-left: 30%;
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 70%;
+  padding: 15px;
+  border-radius: 24px 24px 0px 24px;
+}
+.usericon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+  padding-left: 8px;
+}
+.assitent-msg {
+  background: #414141;
+  max-width: 70%;
+  padding: 15px;
+  border-radius: 50px;
+}
+.chats-card {
+  height: 90%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.assist-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+  width: 100%;
+  overflow: auto;
+  gap: 16px;
+}
+.assistData-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.data-card {
+  width: 100%;
+}
+.user-question {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 100%;
+}
+.content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.details-grid-card {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 16px;
+  grid-auto-flow: row;
+  justify-content: center;
+}
+.details-card {
+  background: #414141;
+  padding: 18px;
+  border-radius: 24px;
+  gap: 18px;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+.details-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 100%;
+}
+.details-nodata-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 100%;
+}
+
+.text-keys {
+  font-weight: 700;
+}
+
+.farm-icon {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-input {
+  padding: 12px 18px 12px 18px;
+  border-radius: 24px;
+  border: 1px;
+  justify: space-between;
+
+  width: 96%;
+  height: 40px;
+  border: none;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: rgb(28, 23, 23);
+}
+.map-card {
+  width: 100%;
+  height: 340px;
+}
+
+.map-container {
+  width: 100%;
+  height: 80%;
+  border-radius: 24px;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #363636;
+  color: white;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+.leaflet-top {
+  left: 90%;
+}
+
+.chart-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 94%;
+  height: 310px;
+  display: flex;
+  justify-content: center;
+}
+
+.apexcharts-menu-icon {
+  display: none;
+}
+
+.custom-tooltip {
+  background: white !important;
+  color: black !important;
+}
+
+.show-query-text {
+  color: #2a48dc;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
