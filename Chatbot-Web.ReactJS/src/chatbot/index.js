@@ -70,7 +70,7 @@ export default function ChatbotHome() {
         <div className="logo-card">
           <img src={cgiarLogo} alt="cgiar logo" className="logo-styles" />
         </div>
-        <div>
+        <div className="logo-card">
           <img src={adggLogo} alt="addg logo" className="logo-styles" />
         </div>
       </div>
